@@ -15,6 +15,6 @@ class BasedINTParamType(click.ParamType):
             else:
                 int(value,10)
         except ValueError:
-            self.fail(f"{value} is not a valid integer",param,ctx):
+            self.fail(f"{value} is not a valid integer",param,ctx)
 
 BASED_INT=BasedINTParamType()
